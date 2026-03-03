@@ -25,10 +25,12 @@ def print_movie(movie):
     
     # Ratings is a nested map in the table — handle it gracefully
     ratings = movie.get("Ratings", "No ratings")
+    director = movie.get("Director", "Unknown director")
     
     print(f"  Title : {title}")
     print(f"  Year  : {year}")
     print(f"  Ratings: {ratings}")
+    print(f"  Director: {director}")
     print()
 
 
