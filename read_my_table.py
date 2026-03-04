@@ -19,7 +19,7 @@ def print_prospect(prospect):
     rank = prospect.get("Rank", "Unknown Ranking")
     name = prospect.get("Name", "Unknown Name")
     
-    draft_team = prospect.get("Draft team", "No pre-draft team")
+    draft_team = prospect.get("Draft Team", "No pre-draft team")
     position = prospect.get("Position", "Unknown position")
     
     print(f"  Rank          : {rank}")
