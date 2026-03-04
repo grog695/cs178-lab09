@@ -52,15 +52,6 @@ def print_all_movies():
     for movie in items:
         print_movie(movie)
 
-
-def main():
-    print("===== Reading from DynamoDB =====\n")
-    print_all_movies()
-
-
-if __name__ == "__main__":
-    main()
-
 def get_movie_by_title():
     movie_title = input("Title: ")
     table = get_table()
@@ -74,3 +65,12 @@ def get_movie_by_title():
     print(f"Found {len(items)} movie(s):\n")
     for movie in items:
         print_movie(movie)
+
+def main():
+    print("===== Reading from DynamoDB =====\n")
+    print_all_movies()
+    get_movie_by_title()
+
+
+if __name__ == "__main__":
+    main()
